@@ -4,13 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+		h3,
+		li{color: brown;}
+		body.main{}
+		.sub{}
+
+		body>div>ul>li{}
+		body li{}
+		/*a[href="http://www.naver.com"]{color:brown;}
+		p>a{text-decoration: none;}
+		p>a:link{color:#000;}
+		p>a:visited {color: #000;}
+		p>a:active {color:#ff0000;}
+		p>a:hover {font-weight: bold;}
+		p>a:focus {color:#0000ff;}*/
+
+		a:link,a:visited{
+			text-decoration: none;
+			color:#000;}
+		ul.nav>li{background-color: skyblue;}
+		ul.nav>li:first-child{background-color: blue;}
+		ul.nav>li:last-child{background-color:orange;}
+		ul.nav>li:nth-child(2){background-color: white;}
+	</style>
 </head>
-<body>
-	<h3>Web Programming</h3>
-	<ul>
-		<li>HTML5</li>
-		<li>CSS</li>
-		<li>JAVASCRIPT</li>
-	</ul>
+<body class="main">
+	<h3>Lorem, ipsum.</h3>
+	<hr>
+	<div>
+		<div></div>
+		<ul class="nav">
+			<li>html</li>
+			<li>css</li>
+			<li>javascript</li>
+		</ul>
+		<div class="sub">Lorem ipsum dolor sit amet, consectetur.</div>
+		<p>
+			<!-- a[속성="속성값"] -->
+			<a href="http://www.naver.com" class="link">naver</a>
+			<a href="http://www.daum.net">daum</a>
+			<a href="http://www.korea.com">korea</a>
+		</p>
+	</div>
 </body>
 </html>

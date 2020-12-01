@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		div.box {
+			width:300px; height: 300px;
+			background-color: skyblue;
+			margin:10px;
+			border-right: 1px solid #000;
+		}
+		div.box>a {
+			background-color:red;
+		}
+		div.box01 {
+			width:300px; height:300px;
+			background-color: skyblue;
+			padding: 10px;
+			border: 10px solid #000;
+			margin: 10px;
+			box-sizing: border-box;
+		}
+		/* box-sizing:content-box; 이 기본값 */
+		div.box01>img {width: 100%;} 
+
+		div.box02 {
+			background-color: pink;
+			width:300px; height:300px;
+			padding: 10px;
+			border:10px solid red;
+			margin:10px;
+			box-sizing: border-box;
+		}
+		div.box02>img {
+			width: 50%;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<a href="#">text</a>
+	</div>
+	<div class="box01">
+		<img src="../images/testimg.jpg" alt="">	
+	</div>
+	<div class="box02">
+		<img src="../images/testimg.jpg" alt="">
+	</div>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea commodi quasi iste perspiciatis <span style="color:red;">consequatur unde maxime, soluta eaque, vero exercitationem</span> voluptatibus quam modi <p style="color:blue;">libero sit eligendi</p> necessitatibus dolorum illum tempora.</p>
+</body>
+</html>
