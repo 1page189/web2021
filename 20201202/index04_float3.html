@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		* {margin: 0; padding: 0;}
+		a {text-decoration: none; color:inherit;}
+		ul {list-style: none;}
+		.clearfix:before, .clearfix:after {
+			display: block; content: ""; clear: both;
+		}
+
+		#wrap {
+			margin: 0 auto;
+			width: 500px;
+			/*background-color: #ddd;*/
+		}
+		div>h1 {
+			text-align:center;
+			font-size: 22px;
+
+		}
+		div>nav {}
+		div>nav>ul.gnb {
+			text-align: center;
+			width:100%;
+		}
+		div>nav>ul.gnb>li {
+			float:left;
+			width:20%;
+			height:40px;
+			line-height: 40px;
+			background-color: #aaa;
+		}
+		div>nav>ul.gnb>li:hover {
+			background-color: darkred;
+			color:#fff;
+		}
+		div>nav>ul.gnb>li>a {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>logo</h1>
+		<nav>
+			<ul class="gnb clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+
+	</div>
+</body>
+</html>

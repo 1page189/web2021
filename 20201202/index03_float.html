@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float</title>
+	<style>
+		* {margin: 0;padding: 0;}
+		div.b {
+			background-color: skyblue;
+			width: 300px;
+			float:left;
+			margin-right: 10px;
+			padding: 20px;
+			text-align: justify;
+		}
+		hr {margin-bottom: 20px;}
+		div.box {
+
+			background-color: beige;
+			width: 500px; _height: 100px;
+			color:#000;
+			margin: 0 auto;
+		}
+		div.box>div.box1{
+			float: left; width: 200px;
+			background-color: orange;
+		}
+		div.box>div.box2{
+			float: right; width: 200px;
+			background-color: green;
+		}
+		div.box>div.box3{
+			clear:both;
+		}
+		.clearfix:after {content: ""; display:block; clear:both;}
+	</style>
+</head>
+<body>
+	<div class="b">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Iure, cumque veniam, impedit sequi inventore nihil dignissimos molestias dolorem! Quasi tenetur iste sapiente rem culpa, perferendis accusantium impedit vero odio cum.</div>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda consectetur doloremque incidunt, libero dolor? Cupiditate quisquam rem adipisci officia sit, recusandae maxime deleniti asperiores, eos animi amet eum aliquam.
+	<img src="../images/testimg.jpg" alt="img">
+	
+	<hr>
+
+	<div class="box clearfix">
+		<div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab assumenda vitae quis alias tempore magni id animi provident laudantium consectetur at, esse sint cum ad dolorem impedit. Placeat, adipisci, nulla? Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quia, beatae nulla aliquam porro provident quam rerum officiis amet quasi vitae, ad optio nesciunt, repellat inventore corrupti sed ex voluptatibus! Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Esse asperiores quidem aliquam, ad fugit accusantium minus nihil at quam nobis inventore laboriosam assumenda odio similique a dignissimos quaerat dolorem ullam.</div>
+		<div class="box2">Corporis ut, neque facilis dolore perferendis, adipisci. Quam magni, ut neque libero facilis vero debitis quo dignissimos? Pariatur inventore unde odit explicabo quibusdam facilis atque excepturi, ex reiciendis, quis, quaerat.</div>
+<!-- 		<div class="box3">Libero assumenda, exercitationem ad nisi ipsum voluptatum quisquam maiores voluptate illum porro temporibus dolore. Nobis nemo odit deleniti inventore quam sint laudantium odio suscipit delectus corrupti veritatis labore, incidunt ut.</div> -->
+		
+	</div>
+	Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Ut quaerat nostrum qui quo, pariatur ad. Odio similique unde veritatis tempore, impedit nihil cum suscipit numquam, quibusdam fuga hic alias! Quae!
+	<style>
+		div.box10:before {
+			content:"안녕합세이";
+		}
+		div.box10:after {
+			content:"안녕하새우";
+		}
+	</style>
+	<div class="box10">10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore dignissimos explicabo velit repellat nesciunt, quae laudantium soluta sint doloremque impedit in quasi culpa totam aut animi aliquid dolorem? Unde.</div>
+</body>
+</html>

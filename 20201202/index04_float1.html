@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float</title>
+	<style>
+		* {margin: 0;padding: 0;}
+		li {list-style: none;}
+		a {content: #000; text-decoration: none;}
+		div.box {
+			margin: 0 auto;
+			width: 500px; _height: 100px;
+			background-color: beige;
+			
+			text-align: center;
+		}
+		div.box>div.box1 {
+			float:left;
+			background-color: orange;
+			width: 100px; height: 50px; line-height: 50px;
+		}
+		div.box>div.box2 {
+			float:right;
+			background-color: yellow;
+			width: 100px; height: 50px; line-height: 50px;
+		}
+		/*div.box>div.clear {clear:both;}*/
+		.clearfix:before, .clearfix:after {display:block; content:""; clear:both;}
+	</style>
+</head>
+<body>
+	<div class="box clearfix">
+		<div class="box1">left</div>
+		<div class="box2">right</div>
+		<div class="clear"></div>
+	</div>
+	Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Ea voluptates deleniti sunt eum fugit nobis aliquam quisquam molestias omnis error nam minima officia veritatis corrupti, maxime temporibus inventore. Placeat, officia?
+
+</body>
+</html>
