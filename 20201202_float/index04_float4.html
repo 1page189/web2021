@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*reset*/
+		* {margin: 0; padding: 0;}
+		a {text-decoration: none; color:inherit;}
+		ul {list-style: none;}
+		img {vertical-align: top; border: 0;}
+		.clearfix:after {display: block; content: ""; clear: both;}
+
+
+		header {margin: 0 auto; width:700px;}
+		h1 {text-align: center; font-size: 22px; padding: 20px 0 20px; background-color: #aaa; color:#fff;}
+		ul.nav {
+			
+			width: 100%;
+		}
+		ul.nav>li {
+			float: left;
+			width: 20%;
+			text-align: center;
+			height:40px; line-height: 40px;
+			background-color: beige;
+		}
+		ul.nav>li>a {
+			display:block;
+
+		}
+		ul.nav>li:hover {
+			background-color: gold;
+			color: #fff;
+		}
+
+		div.visual {
+			margin: 0 auto;
+			width:1000px;
+			height:400px;
+			line-height: 400px;
+			text-align: center;
+			background-color: #ddd;
+		}
+
+		div.contents {
+			margin: 0 auto;
+			width:700px;
+			text-align: center;
+			background-color: #bbb;
+
+		}
+		div.contents>div.aside {
+			float:left;
+			width: 300px;
+			height: 300px;
+			line-height: 300px;
+			background-color:#eee;
+
+		}
+		div.contents>div.content {
+			float:right;
+			width: 400px;
+			height: 300px;
+			line-height: 300px;
+			background-color:#ccc;
+		}
+		footer {
+			margin: 0 auto;
+			width: 700px;
+			height: 150px;
+			line-height: 150px;
+			background-color: #aaa;
+			text-align:center;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		<h1>logo</h1>
+		<ul class="nav clearfix">
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</header>
+		<div class="visual"><img src="../images/images05.jpg" alt="visual"></span></div>
+		<div class="contents clearfix">
+			<div class="aside">aside</div>
+			<div class="content">content</div>
+		</div>
+		<footer id="footer">footer</footer>
+
+</body>
+</html>

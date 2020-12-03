@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float menu</title>
+	<style>
+		/* reset */
+		* {margin: 0;padding: 0;}
+		a {text-decoration: none; color:inherit;}
+		ul {list-style: none;}
+		img {vertical-align: top; border: 0;}
+		.clearfix:after {display: block; content: ""; clear: both;}
+
+		/*nav*/
+		nav.nav {
+			margin: 0 auto;
+			width: 1000px;
+			color:#000;
+		}
+		nav.nav>ul {}
+		nav.nav>ul:after {display:block; clear: both; content: "";}
+		nav.nav>ul>li {
+			float:left; width:20%;
+			height:40px;
+			
+		}
+
+		nav.nav>ul>li>a {display:block;
+			height:40px;
+			line-height: 40px;
+			text-align: center;
+			background-color: #ab6eab;
+
+		}
+
+		nav.nav>ul>li>a:hover {
+			background-color: #A814E7;
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<nav class="nav">
+		<ul class="clearfix">
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</nav>
+	<div style="background-color: #ccc">test1</div>
+
+</body>
+</html>
