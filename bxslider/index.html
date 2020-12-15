@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({mode:'vertical',auto:true});
+		});
+	</script>
+	<style>
+		ul.slider img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<ul class="slider">
+		<li><img src="images/pc01.jpg" alt=""></li>
+		<li><img src="images/pc02.jpg" alt=""></li>
+		<li><img src="images/pc03.jpg" alt=""></li>
+	</ul>
+</body>
+</html>
+
