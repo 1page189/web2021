@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dom</title>
+</head>
+<body>
+	<button onclick="change()">click!</button>
+	<button onclick="init()">원상복구</button>
+	<p>Lorem ipsum, dolor sit <span>amet</span> consectetur adipisicing elit. <span>Assumenda</span> quasi magni omnis odit veniam <span>repudiandae</span> fugit reprehenderit nostrum. Aperiam quaerat officia <span>rerum</span> sunt architecto reprehenderit <span>eos, maxime sit,</span> maiores id!</p>
+	<script>
+		function change(){
+			var sp = document.getElementsByTagName("span");
+			// sp[0].style.color = "red";
+			// sp[2].style.color = "red";
+			// sp[3].style.color = "red";
+			// sp[4].style.color = "red";
+			// sp[5].style.color = "red";
+
+			for(var i=0;i<sp.length;i++){
+				sp[i].style.color="orchid";
+				sp[i].style.fontWeight = "bold"
+			}
+		}
+		function init(){
+			var sp = document.getElementsByTagName("span");
+			for(var i=0;i<sp.length;i++){
+				sp[i].style.color = "initial";
+				sp[i].style.fontWeight = "initial"
+			}
+		}
+	</script>
+	<style>
+		.boxWrap{color:red;}
+		.box{color:initial;}
+	</style>
+	<div class="boxWrap">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quo deleniti illum adipisci ipsam vero debitis ullam laborum id neque suscipit amet ipsum ducimus, quasi enim provident natus hic. Harum!</p>
+		<div class="box">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Aperiam quis magni alias quos non, voluptas. Non soluta debitis nulla mollitia, neque porro exercitationem suscipit sequi ipsa. Vero doloribus quo nulla?</div>
+	</div>
+</body>
+</html>

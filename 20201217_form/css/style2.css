@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {background: #f5f6f7;}
+#wrap {width: 460px; margin: 0 auto;} 
+#header {padding: 60px 0;}
+#header h1 {
+	width: 240px;
+	background-image: url(../images/pc_sp_join.png); background-repeat: no-repeat; background-position: 0 -106px;
+	margin: 0 auto;	
+}
+#header h1 a {
+	display:block;
+	height: 44px;
+	width: 100%;
+	text-indent: -9999px;
+}
+
+fieldset{
+	border: 1px solid #dadada;
+	background: #fff;
+	margin-bottom: 20px;
+}
+fieldset legend{
+	text-indent: -9999px;
+}
+fieldset legend .field{}
+fieldset legend .field label.uid{}
+fieldset legend .field input{}
+fieldset legend .field .icon-id{}

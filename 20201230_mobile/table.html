@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>table</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		table {border: 1px solid #000; width: 100%; margin-bottom: 10px;}
+		td	{
+			border: 1px solid #000;
+			width: 25%;
+			text-align: center;
+			height: 100px; /*vertical-align: top;*/
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Lorem.</td>
+			<td>Beatae.</td>
+			<td>Pariatur.</td>
+			<td>Eligendi.</td>
+		</tr>
+	</table>
+	<style>
+		ul.box {margin-bottom: 10px;}
+		ul.box>li {
+			float: left; width: 25%;
+			border: 1px solid #000; border-right: 0 none;
+			height: 100px; line-height: 100px; text-align: center;
+		}
+		ul.box>li:last-child{border-right: 1px solid #000;}
+	</style>
+	<ul class="box clearfix">
+		<li>Lorem.</li>
+		<li>Assumenda?</li>
+		<li>Officia.</li>
+		<li>Quae.</li>
+	</ul>
+
+	<style>
+		ul.box1 {
+			display: table;
+			_border: 1px solid #000;
+			width: 100%;
+		}
+		ul.box1>li {
+			display: table-cell;
+			border:1px solid #000; border-right: 0 none;
+			text-align: center;
+			width: 25%; height: 100px; vertical-align: middle;
+		}
+		ul.box1>li:last-child {
+			border-right: 1px solid #000;
+		}
+	</style>
+
+	<ul class="box1">
+		<li>Lorem.<br>sdkjfl</li>
+		<li>Assumenda?</li>
+		<li>Officia.</li>
+		<li>Quae.</li>		
+	</ul>
+</body>
+</html>

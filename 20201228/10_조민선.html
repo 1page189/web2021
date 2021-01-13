@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+
+	<style>
+		* {margin: 0; padding: 0; box-sizing: border-box; border-collapse: collapse;}
+		a{text-decoration: none; color:inherit;}
+		ul{list-style:none;}
+		img {vertical-align: top; border:0;}
+		.clearfix:after {content: ""; display: block; clear: both;}
+		
+		.container {margin: 0 auto; text-align: center; padding: 40px 0 ; min-width: 1200px;}
+		
+		.container h2 {font-size:20px; margin:20px 0 10px 0;}
+		.container h2:after {content: ""; display: block; width:150px; height:3px; background: #000; margin: 10px auto;}
+		.container p {margin-bottom: 20px;}
+		.contents {
+			width: 1200px; margin: 0 auto;
+		}
+		.contents ul {}
+		.contents ul li {float:left; width: 288.75px; height: 288.75px; margin-right: 15px; overflow: hidden;  position: relative;}
+		.contents ul li:last-child {margin-right: 0;}
+		.contents ul li img{width: 100%; display: block;}
+		.contents .overlay {
+			width: 100%; height: 100%;
+			background: rgba(255,0,0,0.2);
+			position: absolute; left: 0;top: 0;
+			opacity: 0;
+			transition: 0.3s;
+		}
+		.contents ul li:hover .overlay{
+			opacity: 1;
+		}
+
+
+		.contents .overlay .txt {
+			width: 150px; height: 150px;
+			background: #f00;
+			color: #fff;
+			line-height: 150px; text-align: center;
+			position: absolute; left: 50%; top:50%;
+			transform: translate(-50%,-50%);
+			border-radius: 30%;
+		}
+
+
+		.container.pink {
+			background-image: url(../images/pc01.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.container.skyblue {
+			background-image: url(../images/pc02.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		/*가운데정렬 *
+		1.margin 0 auto;
+		2.poa left:50% ml:-100px;
+		3.poa left:50% transform:translateX(-50%);
+		/
+	</style>
+</head>
+<body>
+	<div class="container pink">
+			<h2>GALLERY</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, natus.</p>
+			<div class="contents">
+			<ul class="clearfix">
+				<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+				<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div></a></li>
+					<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+					<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+
+			</div>
+	</div>
+	<div class="container">
+			<h2>GALLERY</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, natus.</p>
+			<div class="contents">
+			<ul class="clearfix">
+				<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+				<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div></a></li>
+					<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+					<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+
+			</div>
+	</div>
+	<div class="container skyblue">
+			<h2>GALLERY</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, natus.</p>
+			<div class="contents">
+			<ul class="clearfix">
+				<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+				<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div></a></li>
+					<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+					<li>
+					<a href="#">
+						<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum</div>
+					</div></a></li>
+
+			</div>
+	</div>
+</body>
+</html>

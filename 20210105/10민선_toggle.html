@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>toggle</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="css/all.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+
+
+	<style>
+		.menuWrap {}
+		.menuWrap nav {}
+		.menuWrap nav a {}
+		.menuWrap nav a.toggle{}
+		
+
+
+		@media screen and (min-width:992px){
+			.menuWrap{
+				width: 1200px;
+				position: fixed;
+				top: 10px;left: 50%; transform: translateX(-50%);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="menuWrap">
+		<nav class="clearfix">
+			<a href="#">HOME</a>
+			<a href="#">NEWS</a>
+			<a href="#">CONTACT</a>
+			<a href="#">PRODUCT</a>
+			<a href="#" class="toggle"></a>
+		</nav>
+	</div>
+</body>
+</html>

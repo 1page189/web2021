@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body >
+	<p onmouseover="this.style.backgroundColor='orchid'" onmouseout="this.style.backgroundColor='white'">mouse over
+	</p>
+
+
+	<p id="p">
+		마우스오버`
+	</p>
+	<script>
+		
+		var p = document.getElementById("p");
+		//p.onmouseover()같은 경우 매소드
+		//property
+		p.onmouseover = over;
+		p.onmouseout = out;
+
+		function over(){
+			p.style.backgroundColor = "red";
+		}
+		function out(){
+			p.style.backgroundColor = "white";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8"
+
+.box {
+	width: 300px; height: 300px;
+	position: relative;
+	margin: 0 auto;
+	background: skyblue;
+	overflow:hidden;
+	border:10px solid skyblue;
+	cursor:pointer;
+}
+.box .img {
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%);
+}
+
+
+
+.box .bg {}
+.box .btnWrap {}
+.box .btnWrap .btn{}
+
+.contWrap {}
+.contWrap h3 {}
+.contWrap ul {}
+.contWrap li {}
+.contWrap li div {}
+.contWrap li div p {}
+
+
+
+.bWrap {}
+.bWrap ul {}
+.bWrap ul li {}
+.bWrap ul li a{}

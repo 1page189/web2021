@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>aniview</title>
+   <link rel="stylesheet" href="../css/reset.css">
+<style>
+      .btnwrapt{width: 200px;height: 40px;position: relative;}
+
+      .btnwrapt a{display: block;text-align: center;line-height: 40px;position: relative;}
+
+      .btnwrapt .bar{position: absolute;width: 100%;height: 100%;background: olive;
+         transform:scaleX(0);transition:0.3s;transform-origin:left center;}
+
+      .btnwrapt:hover .bar{transform: scaleX(1); transform-origin: right center}
+
+      .btnwrapt:hover a{color: white;font-weight: bold;}
+</style>
+
+<body>
+
+   <div class="btnwrapt">
+      <div class="bar"></div>
+      <a href="#">button</a>
+   </div>
+   
+</body>
+</html>

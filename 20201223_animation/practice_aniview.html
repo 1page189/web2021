@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box {
+			width: 300px; height:300px;
+			margin: 0 auto;
+			background: #5c3d3c;
+			border:10px solid #5c3d3c;
+			cursor:pointer;
+			overflow:hidden;
+			position: relative;
+		}
+		.box > img {
+			position: absolute;
+			left:50%; top:50%;
+			transform:translate(-50%,-50%) scale(1);
+			transition:0.5s;
+		}
+		.box:hover > img {
+			transform: translate(-50%,-50%) scale(1.1);
+		}
+
+		.box .bg {
+			width: 100%; height: 100%;
+			background: #000;
+			opacity:0;
+			transition:0.3s;
+		}
+		.box:hover .bg {
+			opacity:0.3;
+		}
+
+		.box .wrap {
+			width: 50px; height: 50px;
+			border:5px solid #fff; border-radius:25px;
+			position: absolute;
+			left:50%; top:50%; transform: translate(-50%,-50%);
+			transition: 0.3s;
+
+		}
+		.box .wrap .bar1{
+			width: 33px; height: 5px;
+			top: 50%; left: 50%; transform: translate(-50%,-50%);
+			border-radius: 18px;
+			position: absolute;
+			background: #fff;
+		}
+		.box .wrap .bar1:nth-child(2){
+			transform: translate(-50%,-50%) rotate(90deg);
+		}
+
+		.box:hover .wrap {
+			transform:translate(-50%,-50%) rotate(90deg);
+		}
+
+		.container {width: 100%; background: gold; padding:20px 0;}
+		.container h2 {font-size:40px; text-align: center; margin-bottom: 20px; color:darkblue;}
+		.container ul {width: 1200px; margin: 0 auto;} 
+		.container li {float:left; width:232px; margin-right: 10px; position: relative; overflow: hidden; transition:0.3s;}
+		.container li:last-child{margin-right: 0;}
+		.container li:nth-child(1) {border-radius: 50%;}
+
+		.container li img {
+			width: 100%; display:block;
+			transition:0.3s;
+		}
+		.container li:first-child:hover > img {
+			transform: scale(1.2);
+		}
+		.container li .gbg{
+			width: 100%; height: 100%;
+			position: absolute;
+			left: 0;top: 0;
+			background: rgba(0,0,0,0.5);
+			cursor: pointer;
+			opacity: 0;
+
+		}
+		.container li .gbg p{
+			position: absolute;
+			left:50%; top:50%;
+			transform: translate(-50%,-50%);
+			font-size:20px; font-weight: bold; color:#fff;
+		}
+		.container li:hover .gbg{
+			opacity:1;
+		}
+
+		
+		.container li:nth-child(2) .gbg {
+			left:-100%; top:0; opacity:1;
+		}
+		.container li:nth-child(2):hover .gbg {left:0;}
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="images/travel.jpg" alt="">
+		<div class="bg"></div>
+		<div class="wrap">
+			<div class="bar1"></div>
+			<div class="bar1"></div>
+		</div>
+	</div>
+	<div class="container">
+		<h2>Gallery</h2>
+		<ul class="clearfix">
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="gbg">
+					<p>Click!</p>
+				</div>
+				
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="gbg">
+					<p>Click!</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="gbg">
+					<p>Click!</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="gbg">
+					<p>Click!</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/testimg.jpg" alt="">
+				<div class="gbg">
+					<p>Click!</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

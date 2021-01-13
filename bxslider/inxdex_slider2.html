@@ -9,17 +9,16 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
-		$(document).ready(function(){
-			$("ul.slider").bxSlider({
+		$(document).ready(function(){ //jquery start
 
 			var mySlider = $("ul.slider").bxSlider({
 				auto:true,
-				mode:"fade",
 				// mode:"fade",
 				controls:false,
 				pager:false
 			});
-		});
+
+   		 //$(".nextBtn").clcick(function(){ 실행문; });
 
 			$(".nextBtn").click(function(){
 				mySlider.goToNextSlide();
@@ -29,10 +28,10 @@
 			});
 
 
-		});
+		}); // jquery end
 	</script>
 	<style>
-		.slider img{width: 100%;display: block; position: absolute;}
+		.slider img{width: 100%;display: block;}
 		.bx-wrapper {
 		    -moz-box-shadow: none;
 		    -webkit-box-shadow: none;
@@ -55,19 +54,18 @@
 	</style>
 </head>
 <body>
-	
 	<div class="sliderWrap">
 		<ul class="slider"> <!-- 100% -->
 			<li><img src="images/img01.jpg" alt="" ></li>
 			<li><img src="images/img02.jpg" alt=""></li>
 		</ul>
-		<div class="nextBtn"><img src="images/next.png" alt=""></div>
-		<div class="prevBtn"><img src="images/prev.png" alt=""></div>
+		<div class="nextBtn"><img src="images/next01.png" alt=""></div>
+		<div class="prevBtn"><img src="images/prev01.png" alt=""></div>
 
 	</div>
 	<div class="contents">
-
+		
 	</div>
 
 </body>
-</html> 
+</html>
