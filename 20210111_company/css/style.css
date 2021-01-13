@@ -16,7 +16,7 @@ header#main_header {}
 /*slider*/
 .sliderWrap {height:1005px;}
 /*.sliderWrap li img {width: 100%;}*/
-.sliderWrap li {height: 1005px; background: skyblue;
+.sliderWrap li {height: 1005px; _background: skyblue;
 	background-repeat: no-repeat;
 	background-position: center; 
 	background-size: cover;
@@ -54,7 +54,8 @@ header#main_header {}
 /*content*/
 .content{width: 1260px; margin: 0 auto;}
 .content>ul>li {
-	float: left; width: 25%;height: 315px;
+	float: left; width: 25%;height: 315px; position: relative;
+	overflow: hidden; 
 }
 /*.content>ul>li:nth-child(2n){background: skyblue;}*/
 
@@ -66,14 +67,14 @@ header#main_header {}
 .content>ul>li.ct4st{background: #b8307c;}
 .content>ul>li.ct5st{background: #413d3e;}
 .content>ul>li.ct6st{width: 50%;}
-.content>ul>li.ct7st{height: 730px;}
+.content>ul>li.ct7st{height: 630px;}
 .content>ul>li.ct8st{width: 50%;}
 .content>ul>li.ct9st{background: #b8307c;}
 .content>ul>li.ct10st{background: #413d3e;}
 .content>ul>li.ct11st{width: 50%;}
 
 
-/*content cell*/
+/*content icon cell*/
 
 
 .content li.ct1st a,
@@ -96,3 +97,43 @@ header#main_header {}
 .content li.ct9st p,
 .content li.ct10st p
  {color: white;}
+
+/*content txt*/
+ .content div.txt{position: absolute; top: 40px; left: 40px; color:white;}
+ .content div.txt h3 {}
+ .content div.txt h3:after {
+ 	content:"";display: block; width: 50px;height: 2px;
+ 	background: #fff; margin: 20px 0;
+ }
+ .content div.txt p {font-size:2em;}
+
+
+/*modal layter*/
+ .content .ct2st .bgImg {transition: 0.3s;}
+ .content .ct2st:hover .bgImg {transform: scale(1.2);}
+ .content .ct2st .play {
+ 	position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);
+ }
+
+ /*bx slider*/
+
+.content .ct3st {background: white;}
+.content .ct3st h2 {position: absolute; top: 40px; left: 40px;}
+.content .sliderWrap {width: 630px;}
+.content .sliderWrap li.news {width: 630px; }
+.content .sliderWrap .left {position: relative;float: left; width: 315px; height: 315px; padding: 80px	40px;}
+.content .sliderWrap .left:after {
+	content: "";
+	display: block;
+	border-width: 20px;
+	border-style: solid;
+	border-color: transparent transparent transparent white;
+	position: absolute;top:50%; transform: translateY(-50%);
+	right:-40px;
+}
+.content .sliderWrap .right {float: right; width: 315px; height: 315px;}
+
+.content .ct3st .btn {position: absolute;bottom: 20px;left: 213px; width: 76px;}
+.content .ct3st .btn img {float: left;display: block; width: 38px;height: 38px;}
+.content .ct3st .btn .prevBtn {}
+.content .ct3st .btn .nextBtn {}
