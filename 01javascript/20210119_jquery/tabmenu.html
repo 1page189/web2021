@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+
+	<style>
+		.tabWrap {width: 1000px;margin: 0 auto;}
+		.tab li{float: left; width: 20%; text-align: center;line-height: 40px; cursor: pointer;}
+		.tab li.active {background: skyblue;}
+		.boxWrap div {border: 1px solid #000; padding: 20px; display: none;}
+
+	</style>
+
+	<script>
+		$(document).ready(function(){
+			$(".boxWrap>div").eq(0).fadeIn();
+			
+			$(".tabWrap>ul>li").click(function(){
+				var num = $(this).index();
+				console.log(num);
+
+				$(".tabWrap>ul>li").removeClass();
+				$(this).addClass("active");
+				
+				$(".boxWrap>div").hide()
+				$(".boxWrap>div").eq(num).fadeIn();
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="tabWrap">
+		<ul class="tab clearfix">
+			<li class="active">menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+		</ul>
+		<div class="boxWrap">
+			<div>1 Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ullam nobis fuga cupiditate animi commodi totam, aspernatur natus harum asperiores, vero illum fugiat ex maxime. Similique, corrupti velit vero ex a.</div>
+			<div>2 Molestiae, excepturi, deleniti asperiores atque unde perspiciatis impedit maxime, repellendus quod officia deserunt veritatis nisi consequuntur doloribus dolor non magnam illum eligendi numquam enim voluptatibus autem culpa rem! Consectetur, voluptas!</div>
+			<div>3 Placeat eos adipisci repellendus unde, voluptatem tenetur distinctio, atque recusandae incidunt obcaecati corporis alias nesciunt inventore vel minus. Eum, natus ex sunt. Obcaecati esse, amet in molestiae consequatur asperiores unde.</div>
+			<div>4 Facilis delectus, sit maxime, ad aperiam rerum neque a, incidunt nisi atque ipsa tempora optio? Libero repellendus, quas nulla alias impedit nam quibusdam veritatis delectus quisquam, cumque illo minima amet.</div>
+			<div>5 Magnam aspernatur nobis voluptatum error, ut fugit ipsa, reiciendis autem quibusdam vero, aperiam atque at unde eligendi vitae. Tempora magni totam aspernatur amet tempore ut, impedit, qui necessitatibus sequi beatae?</div>
+		</div>
+	</div>
+</body>
+</html>

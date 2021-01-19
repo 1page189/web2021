@@ -17,6 +17,25 @@
 				controls:false,
 				pager:false
 			});
+
+			$(".toggleMenu").click(function(){
+				var toggle = $(".toggleMenu").attr("class"); //get
+				console.log(toggle);
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#main_menu").stop().animate({left:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#main_menu").stop().animate({left:"-100%"},300);
+			}
+
+			});
+
+			$(window).resize(function(){
+				$(".toggleMenu").removeClass("change");
+				$("#main_menu").removeAttr("style");
+			});
+
 		});
 	</script>
 </head>
@@ -34,7 +53,7 @@
 					<li><a href="#">인재채용</a></li>
 				</ul>
 			</nav>
-			<div class="togglemenu">
+			<div class="toggleMenu">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
@@ -178,5 +197,49 @@
 		</ul>				
 		</div>
 	</header>
+	<div class="container">
+		<div class="section">
+			<h4>비전</h4>
+			<p>VISION 2021</p>
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_01.png" alt="engineering">
+						<div class="card_body">
+						<h3>Engineering</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, explicabo.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_02.png" alt="engineering">
+						<div class="card_body">
+						<h3>Engineering</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, explicabo.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_03.png" alt="engineering">
+						<div class="card_body">
+						<h3>Engineering</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, explicabo.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_04.png" alt="engineering">
+						<div class="card_body">
+						<h3>Engineering</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, explicabo.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>

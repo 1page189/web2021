@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body onclick="mouse(event)" style="  100%; height:20px;">
+	<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum repellendus, aut architecto assumenda, molestiae tempora nulla tenetur incidunt esse voluptatum corrupti fugit facilis, obcaecati, est quia adipisci qui quos?</h2>
+	<h2 onclick="offm(event)" style="border:1px solid #000; width:300px;height:400px;margin-left:50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum repellendus, aut architecto assumenda, molestiae tempora nulla tenetur incidunt esse voluptatum corrupti fugit facilis, obcaecati, est quia adipisci qui quos?</h2>
+	<p id="event"></p>
+	<script>
+		function mouse(e){
+			var x = e.clientX;
+			var y = e.clientY;
+			console.log("X값 : " + x + ", Y값 : " + y);
+			var print = "x 값 : " x + ", Y값" + y;
+			document.getElementById("event").innerHTML = print;
+		}
+		function offm(e){
+			var x = e.offsetX;
+			var y = e.offsetY;
+			var print = "x 값 : " x + ",Y값" + y;
+			document.getElementById("event").innerHTML = print;
+		}
+
+	</script>
+</body>
+</html>

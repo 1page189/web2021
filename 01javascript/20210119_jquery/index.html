@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <script src="http://ajax/googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script>
+		$(document).ready(function(){
+			//$("p").hide();
+			$("p").css("background-color","red"); //set
+			var pTag = $("p").css("background-color"); //get
+			console.log (pTag);
+			console.log("p 태그의 개수 : " + $("p").length);
+			$("p").eq(1).css("background-color","skyblue")
+			$("p").eq(3).css("background-color","pink").css("color","white").css("font-size",30);
+		});
+	</script>
+	<style>
+		.tab {width: 300px;}
+		.tab li {float: left; width: 100px; text-align: center;line-height: 30px;}
+		div {width: 300px;padding:10px; border: 1px solid #000;}
+		div:hover {}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".box2,.box3").hide();
+			$("ul>li").eq(0).click(function(){
+				$(".box1").fadeIn();
+				$(".box2").hide();
+				$(".box3").hide();
+			});
+			$("ul>li").eq(1).click(function(){
+				$(".box1").hide();
+				$(".box2").fadeIn();
+				$(".box3").hide();
+			});
+			$("ul>li").eq(2).click(function(){
+				$(".box1").hide();
+				$(".box2").hide();
+				$(".box3").fadeIn();
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium voluptate culpa qui dicta quod laboriosam. At ipsa blanditiis excepturi minima minus delectus soluta eius saepe. Dolor beatae dignissimos voluptates.</p>
+	<p>Deserunt odio fuga hic odit vel esse sed cumque tempore provident voluptates alias reprehenderit obcaecati expedita, suscipit blanditiis rem, culpa quod veritatis. Voluptate officiis vero consectetur velit aspernatur dicta, eveniet.</p>
+	<p>Totam praesentium incidunt corrupti dicta dolorum possimus, iure labore ad impedit accusantium officia consectetur dignissimos molestiae cupiditate in sint aut omnis assumenda earum. Eum blanditiis ea illo odit facere, in?</p>
+	<p>Commodi iste voluptate vitae sunt autem, quibusdam mollitia, quaerat et dolores nostrum consequatur dolor! Fugiat beatae asperiores aliquam eum fuga, inventore minima, ipsam repellendus aliquid delectus adipisci voluptatum hic id!</p>
+
+	<ul class="tab clearfix">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+	</ul>
+	<div class="box1">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, totam.</div>
+	<div class="box2">2 Animi cumque quisquam veritatis voluptas hic explicabo blanditiis nobis reiciendis?</div>
+	<div class="box3">3 Aut ad quisquam delectus cumque eos blanditiis modi nobis dolorum.</div>
+</body>
+</html>
