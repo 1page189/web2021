@@ -70,6 +70,7 @@
         $("html").animate({scrollTop:st},300);
       });
 
+//      1st menu on
 //      $(window).scroll(function(){
 //        var scrollY = $(window).scrollTop();
 //
@@ -85,12 +86,22 @@
 
 //      });
 
+      //2st menu on
+      //$(window).scroll(function(){
+      //  for(var i=0;i<0;i++){
+      //    if(scrollY >= $(".scene").eq(i).offset().top){
+      //      $(".menu>a").removeClass("on").eq(i).addClass("on");
+      //    }
+      //  }
+    //  });
+
+      //3st menu on
       $(window).scroll(function(){
-        for(var i=0;i>=0;i++){
-          if(scrollY >= $(".scene").eq(i).offset().top){
-            $(".menu>a").removeClass("on").eq(i).addClass("on");
-          }
-        }
+        $(".scene").each(function(index){
+            if(scrollY >= $(this).offset().top){
+              $(".menu>a").removeClass("on").eq(index).addClass("on");
+            }
+          });
       });
 
     });
